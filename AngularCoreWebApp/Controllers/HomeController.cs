@@ -11,6 +11,7 @@ namespace AngularCoreWebApp.Controllers
     {
         public IActionResult Index()
         {
+       
             return View();
         }
 
