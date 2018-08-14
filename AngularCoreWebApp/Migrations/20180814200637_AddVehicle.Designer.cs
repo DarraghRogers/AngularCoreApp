@@ -4,14 +4,16 @@ using AngularCoreWebApp.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AngularCoreWebApp.Migrations
 {
     [DbContext(typeof(AngularCoreWebAppDbContext))]
-    partial class AngularCoreWebAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180814200637_AddVehicle")]
+    partial class AddVehicle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
