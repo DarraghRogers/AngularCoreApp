@@ -23,11 +23,11 @@ namespace AngularCoreWebApp.Controllers
         }
 
         [HttpGet("/api/features")]
-        public async Task<IEnumerable<FeatureResource>> GetResources()
+        public async Task<IEnumerable<KeyValuePairResource>> GetResources()
         {
             var features = await context.Features.ToListAsync();
 
-            return mapper.Map<List<Feature>, List<FeatureResource>>(features);
+            return mapper.Map<List<Feature>, List<KeyValuePairResource>>(features);
 
         }
     }
